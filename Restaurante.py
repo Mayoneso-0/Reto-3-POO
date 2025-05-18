@@ -16,7 +16,7 @@ class beverage(menu_item):
     def agua():
         return(beverage(name = "Agua", price = 1500, type = "beverage",
                          size = "250ml", flavor = "Sin gas"))
-    def gaseosa_Cocacola():
+    def cocacola():
         return(beverage(name = "Cocacola",price = 2500, type = "beverage",
                          size = "250ml",flavor = "Clasica"))
     def jugo_de_naranja():
