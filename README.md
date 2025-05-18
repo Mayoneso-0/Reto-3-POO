@@ -1,3 +1,4 @@
+
 ## Reto 3
 1. Create a repo with the class exercise
 2. **Restaurant scenario:** You want to design a program to calculate the bill for a customer's order in a restaurant.
@@ -9,6 +10,8 @@ Create a class diagram with all classes and their relationships.
 The menu should have at least 10 items.
 The code should follow PEP8 rules.
 
+
+```mermaid
 ---
 config:
   look: classic
@@ -69,3 +72,4 @@ direction TB
     Menu_item --* main_course
     Menu_item --* dessert
     order <|-- Menu_item
+```
