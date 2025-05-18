@@ -72,25 +72,26 @@ class main_course(menu_item):
 
 # Crea una subclase dessert que herede de menu_item
 class dessert(menu_item):
-    def __init__(self, name: str, price: float, type: str, size: str):
+    def __init__(self, name: str, price: float, type: str, size: str, flavor: str):
         super().__init__(name, price)
         self.type = type
         self.type = "dessert"
         self.size = size
+        self.flavor = flavor
 
     #Los postres y sus respectivos atributos
     def helado():
         return(dessert(name = "Helado", price = 5000, type = "dessert",
-                        size = "personal"))
+                        size = "personal", flavor = "chocolate"))
     def torta():
         return(dessert(name = "Torta", price = 8000, type = "dessert",
-                        size = "mediano"))
+                        size = "mediano", flavor = "vainilla"))
     def galletas():
         return(dessert(name = "Galletas", price = 3000, type = "dessert",
-                        size = "personal"))
+                        size = "personal", flavor = "chocolate"))
     def flan():
         return(dessert(name = "Flan", price = 4000, type = "dessert",
-                        size = "personal"))
+                        size = "personal", flavor = "coco"))
 
 #Crea la clase order 
 class order:
